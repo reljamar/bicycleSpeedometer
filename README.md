@@ -31,7 +31,7 @@ The display on this device is made of two parts: the 7-segment LCD, and indicati
 The sensor is activated by a magnet attached to the wheel spokes. The sensor is a simple reed switch. This is done to minimize current draw. A Hall effect sensor or Hall effect switch constantly consumes a few mA, whereas the reed switch only draws current during the small percantage of the rotation period when it is closed by the magnet on the wheel, and that current is limited by a pull-up resistor. Due to the nature of using a mechanical switch, it is prone to bouncing. That is why an RC filter is implemented, as well as debounce software. The magnet is strong enough to keep the switch closed for a significant enough portion of the period to allow time for the bouncing to settle.
 <p align="center">
 <img src="images/magnet-distance.jpeg" alt="Magnet activation distance" width="45%"/>
-<img src="images/reed-boucne.png" alt="Reed bouncing signal" width="45%"/>
+<img src="images/reed-bounce.png" alt="Reed bouncing signal" width="45%"/>
 </p>
 The image on the left shows the activation distance for the magnet. The image on the right is the reed switch's bouncing effect.
 
